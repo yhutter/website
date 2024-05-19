@@ -1,0 +1,48 @@
+:root {
+    --dark-bg-hard-color: #1d2011;
+    --dark-bg-color: #282828;
+    /* --dark-fg-color: #ebdbb2; */
+    --dark-fg-color: white;
+}
+
+@font-face {
+    font-family: "Jetbrains Mono";
+    src: url("../fonts/ttf/JetBrainsMono-Regular.ttf"),
+        url("../fonts/woff2/JetBrainsMono-Regular.woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jetbrains Mono", sans-serif;
+    background-color: var(--dark-bg-color);
+    color: var(--dark-fg-color);
+}
+
+nav {
+    background-color: var(--dark-bg-hard-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+
+    .navigation-items {
+        padding: 0;
+        color: white;
+        display: inline-block;
+        list-style-type: none;
+
+        li {
+            float: left;
+            margin-left: 1rem;
+        }
+
+        li:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+section {
+    padding: 1rem;
+}
